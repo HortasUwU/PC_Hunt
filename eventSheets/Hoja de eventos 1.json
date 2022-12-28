@@ -14,9 +14,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 908574995616280,
+					"sid": 210019451752780,
 					"parameters": {
-						"layout": "Menu"
+						"layout": "Game"
 					}
 				}
 			],

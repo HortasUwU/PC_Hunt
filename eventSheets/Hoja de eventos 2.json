@@ -1,5 +1,137 @@
 {
 	"name": "Hoja de eventos 2",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Vidas",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 989854440579272
+		},
+		{
+			"eventType": "variable",
+			"name": "Puntos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 428765471292445
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 302207796610545
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "vidas",
+					"sid": 190945306153328,
+					"parameters": {
+						"text": "Vidas"
+					}
+				}
+			],
+			"sid": 904016471446603
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 147586512708480
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "puntos",
+					"sid": 602508955862493,
+					"parameters": {
+						"text": "Puntos"
+					}
+				}
+			],
+			"sid": 462810233386122
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 849687205847087
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "caja",
+					"sid": 306889601547018,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cpu",
+					"sid": 879846093716903,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "gpu",
+					"sid": 380071132194021,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "fuenteAlimentacion",
+					"sid": 437870593840292,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "placaBase",
+					"sid": 202142682940986,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ram",
+					"sid": 665720863886106,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cpucooler",
+					"sid": 132472891686166,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 398838154288879
+		}
+	],
 	"sid": 190884631642231
 }

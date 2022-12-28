@@ -21,13 +21,49 @@
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Entrada de texto",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "gqlvcnx2s09",
 	"objectTypes": {
 		"items": [
 			"Menu_bg",
-			"Boton_start"
+			"Boton_start",
+			"gameBg",
+			"caja",
+			"ram",
+			"fuenteAlimentacion",
+			"placaBase",
+			"gpu",
+			"cpu",
+			"vidas",
+			"Texto2",
+			"Texto3",
+			"puntos",
+			"EntradaDeTexto_cpu",
+			"EntradaDeTexto_ram",
+			"EntradaDeTexto_fuenteAlimentacion",
+			"EntradaDeTexto_gpu",
+			"EntradaDeTexto_placaBase",
+			"EntradaDeTexto_caja",
+			"EntradaDeTexto_cpuCooler",
+			"EntradaDeTexto_ram7",
+			"cpucooler"
 		],
 		"subfolders": []
 	},
@@ -73,64 +109,7 @@
 			"subfolders": []
 		},
 		"icon": {
-			"items": [
-				{
-					"name": "icono-16.png",
-					"type": "image/png",
-					"sid": 369478200000550,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-32.png",
-					"type": "image/png",
-					"sid": 945354525004191,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-64.png",
-					"type": "image/png",
-					"sid": 872496227052391,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-128.png",
-					"type": "image/png",
-					"sid": 701309748983425,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-256.png",
-					"type": "image/png",
-					"sid": 859104807742437,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-512.png",
-					"type": "image/png",
-					"sid": 229925224515535,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "logo-carga.png",
-					"type": "image/png",
-					"sid": 123561247158637,
-					"icon-info": {
-						"purpose": "loading-logo"
-					}
-				}
-			],
+			"items": [],
 			"subfolders": []
 		},
 		"general": {
