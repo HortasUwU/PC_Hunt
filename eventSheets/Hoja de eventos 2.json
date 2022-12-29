@@ -205,6 +205,48 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
+					"sid": 316298572752987,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto_fuenteDeAlimentacion",
+					"sid": 484662109288389,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto_fuenteDeAlimentacion",
+					"sid": 271037233507016,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "fuenteAlimentacion",
+					"sid": 660277752421648,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 579185824281006
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
 					"sid": 482111247033068,
 					"parameters": {
 						"variable": "ObjetoActivo",
@@ -420,8 +462,8 @@
 				},
 				{
 					"id": "compare-text",
-					"objectClass": "EntradaDeTexto_gpu",
-					"sid": 519316075233172,
+					"objectClass": "EntradaDeTexto_cpuCooler",
+					"sid": 191615404981473,
 					"parameters": {
 						"text": "\"refrigeracion cpu\"",
 						"case": "case-insensitive"
@@ -453,13 +495,13 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "EntradaDeTexto_cpuCooler",
-					"sid": 562720909121444
+					"objectClass": "cpucooler",
+					"sid": 412706274082807
 				},
 				{
 					"id": "destroy",
-					"objectClass": "cpucooler",
-					"sid": 958366650159163
+					"objectClass": "EntradaDeTexto_cpuCooler",
+					"sid": 562720909121444
 				},
 				{
 					"id": "set-eventvar-value",
@@ -472,6 +514,74 @@
 				}
 			],
 			"sid": 460698634203224
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 171957077695797,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto_fuenteDeAlimentacion",
+					"sid": 160249114045067,
+					"parameters": {
+						"text": "\"fuente de alimentacion\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "key-code-is-down",
+					"objectClass": "Teclado",
+					"sid": 550414706857599,
+					"parameters": {
+						"keycode": "13"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 108433953358363
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 383821115105033,
+					"parameters": {
+						"variable": "Puntos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "fuenteAlimentacion",
+					"sid": 221308690605106
+				},
+				{
+					"id": "destroy",
+					"objectClass": "EntradaDeTexto_fuenteDeAlimentacion",
+					"sid": 991756304474779
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 935496090621025,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"value": "5"
+					}
+				}
+			],
+			"sid": 694643169928629
 		}
 	],
 	"sid": 190884631642231

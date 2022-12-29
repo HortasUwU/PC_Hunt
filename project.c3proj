@@ -64,7 +64,9 @@
 			"gpu",
 			"EntradaDeTexto_gpu",
 			"cpucooler",
-			"EntradaDeTexto_cpuCooler"
+			"EntradaDeTexto_cpuCooler",
+			"EntradaDeTexto_fuenteDeAlimentacion",
+			"fuenteAlimentacion"
 		],
 		"subfolders": []
 	},
