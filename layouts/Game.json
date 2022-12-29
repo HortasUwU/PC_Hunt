@@ -67,7 +67,7 @@
 				{
 					"type": "ram",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -125,7 +125,7 @@
 				{
 					"type": "placaBase",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -154,7 +154,7 @@
 				{
 					"type": "gpu",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -183,7 +183,7 @@
 				{
 					"type": "cpu",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -378,7 +378,7 @@
 					}
 				},
 				{
-					"type": "EntradaDeTexto_cpu",
+					"type": "EntradaDeTexto_caja",
 					"properties": {
 						"text": "",
 						"placeholder": "",
@@ -413,7 +413,7 @@
 				{
 					"type": "cpucooler",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,

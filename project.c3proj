@@ -37,6 +37,14 @@
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Teclado",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "gqlvcnx2s09",
@@ -55,15 +63,9 @@
 			"Texto2",
 			"Texto3",
 			"puntos",
-			"EntradaDeTexto_cpu",
-			"EntradaDeTexto_ram",
-			"EntradaDeTexto_fuenteAlimentacion",
-			"EntradaDeTexto_gpu",
-			"EntradaDeTexto_placaBase",
 			"EntradaDeTexto_caja",
-			"EntradaDeTexto_cpuCooler",
-			"EntradaDeTexto_ram7",
-			"cpucooler"
+			"cpucooler",
+			"Teclado"
 		],
 		"subfolders": []
 	},
