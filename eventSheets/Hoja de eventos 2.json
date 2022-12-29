@@ -247,6 +247,48 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
+					"sid": 998892692311918,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto_ram",
+					"sid": 749342667691885,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto_ram",
+					"sid": 850919614989075,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ram",
+					"sid": 860926256078299,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 649496059601531
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
 					"sid": 482111247033068,
 					"parameters": {
 						"variable": "ObjetoActivo",
@@ -582,6 +624,74 @@
 				}
 			],
 			"sid": 694643169928629
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 571502674024345,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "5"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto_fuenteDeAlimentacion",
+					"sid": 229708558110061,
+					"parameters": {
+						"text": "\"ram\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "key-code-is-down",
+					"objectClass": "Teclado",
+					"sid": 734838039663376,
+					"parameters": {
+						"keycode": "13"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 953284428568848
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 335432593275192,
+					"parameters": {
+						"variable": "Puntos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ram",
+					"sid": 808265664668782
+				},
+				{
+					"id": "destroy",
+					"objectClass": "EntradaDeTexto_ram",
+					"sid": 986039685746950
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 478600873326754,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"value": "6"
+					}
+				}
+			],
+			"sid": 525598885959468
 		}
 	],
 	"sid": 190884631642231
