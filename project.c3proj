@@ -53,19 +53,18 @@
 			"Menu_bg",
 			"Boton_start",
 			"gameBg",
-			"caja",
-			"ram",
-			"fuenteAlimentacion",
-			"placaBase",
-			"gpu",
-			"cpu",
 			"vidas",
 			"Texto2",
 			"Texto3",
 			"puntos",
 			"EntradaDeTexto_caja",
+			"Teclado",
+			"Sprite",
+			"caja",
+			"gpu",
+			"EntradaDeTexto_gpu",
 			"cpucooler",
-			"Teclado"
+			"EntradaDeTexto_cpuCooler"
 		],
 		"subfolders": []
 	},
@@ -111,7 +110,72 @@
 			"subfolders": []
 		},
 		"icon": {
-			"items": [],
+			"items": [
+				{
+					"name": "cpucooler.png",
+					"type": "image/png",
+					"sid": 530241517252439,
+					"icon-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "game bg.png",
+					"type": "image/png",
+					"sid": 921519278156089,
+					"icon-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "fuente alimentacion.png",
+					"type": "image/png",
+					"sid": 647316043498794,
+					"icon-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ram.png",
+					"type": "image/png",
+					"sid": 940743776991426,
+					"icon-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "caja.png",
+					"type": "image/png",
+					"sid": 542059911181438,
+					"icon-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "cpu.png",
+					"type": "image/png",
+					"sid": 687929623083363,
+					"icon-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "placa base.png",
+					"type": "image/png",
+					"sid": 538226833712599,
+					"icon-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "gpu.png",
+					"type": "image/png",
+					"sid": 546291916864875,
+					"icon-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"general": {

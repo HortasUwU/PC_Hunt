@@ -1,7 +1,7 @@
 {
 	"name": "gpu",
 	"plugin-id": "Sprite",
-	"sid": 245981497751088,
+	"sid": 805616870283803,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3075483,
+						"imageSpriteId": 758720,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 237214911483590,
+				"sid": 755567235220973,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

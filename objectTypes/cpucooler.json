@@ -1,7 +1,7 @@
 {
 	"name": "cpucooler",
 	"plugin-id": "Sprite",
-	"sid": 980901879805319,
+	"sid": 315059910851439,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8533292,
+						"imageSpriteId": 3993363,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 582167677316474,
+				"sid": 176189954819670,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -22,6 +22,16 @@
 			"sid": 428765471292445
 		},
 		{
+			"eventType": "variable",
+			"name": "ObjetoActivo",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 769032840845405
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -67,128 +77,401 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "key-code-is-down",
-					"objectClass": "Teclado",
-					"sid": 592231636218283,
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 153230543831387,
 					"parameters": {
-						"keycode": "13"
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto_caja",
+					"sid": 131396969556390,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto_caja",
+					"sid": 418685135586946,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "caja",
+					"sid": 989702674480801,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 826295563783289
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 587448554327101,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto_gpu",
+					"sid": 132007197472009,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto_gpu",
+					"sid": 373605952220089,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "gpu",
+					"sid": 428697743039762,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 832167585558046
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 666822741401217,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto_cpuCooler",
+					"sid": 498187493783046,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto_cpuCooler",
+					"sid": 844108694429779,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cpucooler",
+					"sid": 790025717598801,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 148583629897401
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 482111247033068,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "1"
 					}
 				},
 				{
 					"id": "compare-text",
 					"objectClass": "EntradaDeTexto_caja",
-					"sid": 799870301830401,
+					"sid": 351640808669769,
 					"parameters": {
 						"text": "\"caja\"",
 						"case": "case-insensitive"
 					}
 				},
 				{
+					"id": "key-code-is-down",
+					"objectClass": "Teclado",
+					"sid": 378259163322049,
+					"parameters": {
+						"keycode": "13"
+					}
+				},
+				{
 					"id": "trigger-once-while-true",
 					"objectClass": "System",
-					"sid": 365209156735001
+					"sid": 416993808634749
 				}
 			],
 			"actions": [
 				{
-					"id": "set-visible",
-					"objectClass": "caja",
-					"sid": 833074888783547,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 553939849612868,
+					"sid": 997545708538116,
 					"parameters": {
 						"variable": "Puntos",
 						"value": "1"
 					}
 				},
 				{
-					"id": "set-enabled",
-					"objectClass": "EntradaDeTexto_caja",
-					"sid": 404343656697098,
-					"parameters": {
-						"mode": "disabled"
-					}
+					"id": "destroy",
+					"objectClass": "caja",
+					"sid": 975535768052967
 				},
 				{
-					"id": "set-visible",
+					"id": "destroy",
 					"objectClass": "EntradaDeTexto_caja",
-					"sid": 621607768419820,
+					"sid": 345356431423694
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 117167705668894,
 					"parameters": {
-						"visibility": "invisible"
+						"variable": "ObjetoActivo",
+						"value": "2"
 					}
 				}
 			],
-			"sid": 976023645724785
+			"sid": 594834299315282
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "key-code-is-down",
-					"objectClass": "Teclado",
-					"sid": 734120697386714,
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 230457904934816,
 					"parameters": {
-						"keycode": "13"
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "1"
 					}
 				},
 				{
 					"id": "compare-text",
 					"objectClass": "EntradaDeTexto_caja",
-					"sid": 331209066965695,
+					"sid": 715441086693455,
 					"parameters": {
-						"text": "\"caja\"",
+						"text": "\"caja!\"",
 						"case": "case-insensitive"
 					},
 					"isInverted": true
 				},
 				{
+					"id": "key-code-is-down",
+					"objectClass": "Teclado",
+					"sid": 100441519348181,
+					"parameters": {
+						"keycode": "13"
+					}
+				},
+				{
 					"id": "trigger-once-while-true",
 					"objectClass": "System",
-					"sid": 323204433458705
+					"sid": 670998360143885
 				}
 			],
 			"actions": [
 				{
-					"id": "set-visible",
-					"objectClass": "caja",
-					"sid": 856481565322338,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "add-to-eventvar",
+					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 184754823479184,
+					"sid": 338838223867499,
 					"parameters": {
 						"variable": "Vidas",
-						"value": "-1"
+						"value": "1"
 					}
 				},
 				{
-					"id": "set-enabled",
-					"objectClass": "EntradaDeTexto_caja",
-					"sid": 165416520656420,
-					"parameters": {
-						"mode": "disabled"
-					}
+					"id": "destroy",
+					"objectClass": "caja",
+					"sid": 384063262958004
 				},
 				{
-					"id": "set-visible",
+					"id": "destroy",
 					"objectClass": "EntradaDeTexto_caja",
-					"sid": 341992637194568,
+					"sid": 616124907760772
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 335992636803692,
 					"parameters": {
-						"visibility": "invisible"
+						"variable": "ObjetoActivo",
+						"value": "2"
 					}
 				}
 			],
-			"sid": 139063861726747
+			"sid": 122441282410456,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 739205113506628,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto_gpu",
+					"sid": 477247453302594,
+					"parameters": {
+						"text": "\"gpu\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "key-code-is-down",
+					"objectClass": "Teclado",
+					"sid": 682823249226179,
+					"parameters": {
+						"keycode": "13"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 818095577083491
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 240599692482005,
+					"parameters": {
+						"variable": "Puntos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "gpu",
+					"sid": 298892537426102
+				},
+				{
+					"id": "destroy",
+					"objectClass": "EntradaDeTexto_gpu",
+					"sid": 477588694105775
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 644610631210910,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 364799303989285
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 462626576242407,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto_gpu",
+					"sid": 519316075233172,
+					"parameters": {
+						"text": "\"refrigeracion cpu\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "key-code-is-down",
+					"objectClass": "Teclado",
+					"sid": 531486520258754,
+					"parameters": {
+						"keycode": "13"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 329881492771682
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 664980045140383,
+					"parameters": {
+						"variable": "Puntos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "EntradaDeTexto_cpuCooler",
+					"sid": 562720909121444
+				},
+				{
+					"id": "destroy",
+					"objectClass": "cpucooler",
+					"sid": 958366650159163
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 182766232559882,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"value": "4"
+					}
+				}
+			],
+			"sid": 460698634203224
 		}
 	],
 	"sid": 190884631642231
