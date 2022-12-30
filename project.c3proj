@@ -72,7 +72,9 @@
 			"cpu",
 			"EntradaDeTexto_cpu",
 			"placaBase",
-			"EntradaDeTexto_placaBase"
+			"EntradaDeTexto_placaBase",
+			"endBg",
+			"Boton_start2"
 		],
 		"subfolders": []
 	},
@@ -85,7 +87,8 @@
 	"layouts": {
 		"items": [
 			"Menu",
-			"Game"
+			"Game",
+			"End"
 		],
 		"subfolders": []
 	},

@@ -1,5 +1,5 @@
 {
-	"name": "Menu",
+	"name": "End",
 	"layers": [
 		{
 			"name": "Capa 0",
@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Menu_bg",
+					"type": "endBg",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -15,14 +15,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 2,
+					"uid": 24,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 80.03889031743363,
-						"y": 72.22248045485198,
-						"width": 160,
-						"height": 144,
+						"x": 79.11649663175953,
+						"y": 70.368438461422,
+						"width": 165.76846181105088,
+						"height": 149.91495677320626,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -32,14 +32,14 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": -1
 					}
 				},
 				{
-					"type": "Boton_start",
+					"type": "Boton_start2",
 					"properties": {
 						"type": "button",
-						"text": "Start",
+						"text": "Menu",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -48,14 +48,14 @@
 						"id": "",
 						"class": ""
 					},
-					"uid": 3,
+					"uid": 26,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 33.99039449571998,
-						"y": 126.0093768718863,
-						"width": 91.13378060350695,
-						"height": 17.152623727404404,
+						"x": 100.90145208140828,
+						"y": 11.631147744066716,
+						"width": 55.20815590666419,
+						"height": 13.26214144316095,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -67,7 +67,7 @@
 					}
 				}
 			],
-			"sid": 460003980925269,
+			"sid": 399890267319885,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -96,7 +96,7 @@
 			"global": false
 		}
 	],
-	"sid": 519109604511017,
+	"sid": 413453634087937,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 160,

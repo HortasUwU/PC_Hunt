@@ -21,6 +21,27 @@
 				}
 			],
 			"sid": 834678961466990
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Boton_start2",
+					"sid": 388128663043268
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 262450572476502,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 184463052346618
 		}
 	],
 	"sid": 457220078783269

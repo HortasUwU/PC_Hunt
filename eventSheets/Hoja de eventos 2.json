@@ -35,6 +35,37 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 789390642548456
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 973382397569428,
+					"parameters": {
+						"variable": "Puntos",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 221754529067081,
+					"parameters": {
+						"variable": "Vidas",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 931822291286872
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 302207796610545
@@ -909,6 +940,14 @@
 						"variable": "ObjetoActivo",
 						"value": "8"
 					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 492910682487946,
+					"parameters": {
+						"layout": "End"
+					}
 				}
 			],
 			"sid": 868728804001930
@@ -919,24 +958,15 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 915510653290660,
+					"sid": 667743033395116,
 					"parameters": {
 						"first-value": "Puntos",
 						"comparison": 0,
-						"second-value": "8"
+						"second-value": "7"
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 560417215678749,
-					"parameters": {
-						"layout": "Game"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 360052549128797
 		}
 	],
