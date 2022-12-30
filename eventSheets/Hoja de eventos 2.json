@@ -247,11 +247,53 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 998892692311918,
+					"sid": 389213895634575,
 					"parameters": {
 						"variable": "ObjetoActivo",
 						"comparison": 0,
 						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto_cpu",
+					"sid": 787389232637151,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto_cpu",
+					"sid": 901966604297212,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cpu",
+					"sid": 314680472337951,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 239600127154074
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 860531502831969,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "6"
 					}
 				}
 			],
@@ -282,6 +324,48 @@
 				}
 			],
 			"sid": 649496059601531
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 559371603971119,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTexto_placaBase",
+					"sid": 402231153579111,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "EntradaDeTexto_placaBase",
+					"sid": 436201939596260,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "placaBase",
+					"sid": 903432203978200,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 598836289519573
 		},
 		{
 			"eventType": "block",
@@ -640,10 +724,10 @@
 				},
 				{
 					"id": "compare-text",
-					"objectClass": "EntradaDeTexto_fuenteDeAlimentacion",
-					"sid": 229708558110061,
+					"objectClass": "EntradaDeTexto_cpu",
+					"sid": 413885431405835,
 					"parameters": {
-						"text": "\"ram\"",
+						"text": "\"cpu\"",
 						"case": "case-insensitive"
 					}
 				},
@@ -673,13 +757,13 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "ram",
-					"sid": 808265664668782
+					"objectClass": "cpu",
+					"sid": 589749119304202
 				},
 				{
 					"id": "destroy",
-					"objectClass": "EntradaDeTexto_ram",
-					"sid": 986039685746950
+					"objectClass": "EntradaDeTexto_cpu",
+					"sid": 794801779282843
 				},
 				{
 					"id": "set-eventvar-value",
@@ -692,6 +776,168 @@
 				}
 			],
 			"sid": 525598885959468
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 415910885345727,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "6"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto_ram",
+					"sid": 736988575970862,
+					"parameters": {
+						"text": "\"ram\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "key-code-is-down",
+					"objectClass": "Teclado",
+					"sid": 918183032624456,
+					"parameters": {
+						"keycode": "13"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 706759094358502
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 712440530164869,
+					"parameters": {
+						"variable": "Puntos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ram",
+					"sid": 600624037906447
+				},
+				{
+					"id": "destroy",
+					"objectClass": "EntradaDeTexto_ram",
+					"sid": 500005758622271
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 990269894371664,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"value": "7"
+					}
+				}
+			],
+			"sid": 677560387783096
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 216677027290700,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"comparison": 0,
+						"value": "7"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto_placaBase",
+					"sid": 605606772615389,
+					"parameters": {
+						"text": "\"placa Base\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "key-code-is-down",
+					"objectClass": "Teclado",
+					"sid": 212394734828478,
+					"parameters": {
+						"keycode": "13"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 808667601043099
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 419944462241309,
+					"parameters": {
+						"variable": "Puntos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "placaBase",
+					"sid": 251062648945126
+				},
+				{
+					"id": "destroy",
+					"objectClass": "EntradaDeTexto_placaBase",
+					"sid": 414384136191846
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 369865145409833,
+					"parameters": {
+						"variable": "ObjetoActivo",
+						"value": "8"
+					}
+				}
+			],
+			"sid": 868728804001930
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 915510653290660,
+					"parameters": {
+						"first-value": "Puntos",
+						"comparison": 0,
+						"second-value": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 560417215678749,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 360052549128797
 		}
 	],
 	"sid": 190884631642231

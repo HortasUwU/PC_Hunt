@@ -526,7 +526,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 80.22222431704952,
+						"x": 80.03605350252852,
 						"y": 72.16098534775809,
 						"width": 160,
 						"height": 144,
@@ -548,7 +548,7 @@
 						"text": "",
 						"placeholder": "",
 						"tooltip": "",
-						"initially-visible": true,
+						"initially-visible": false,
 						"enabled": false,
 						"read-only": false,
 						"spell-check": false,
@@ -565,6 +565,68 @@
 						"y": 120.1786880493164,
 						"width": 112.14665885600962,
 						"height": 17.443579306741924,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "placaBase",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 79.17075960355348,
+						"y": 69.0064386747079,
+						"width": 85,
+						"height": 69,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EntradaDeTexto_placaBase",
+					"properties": {
+						"text": "",
+						"placeholder": "",
+						"tooltip": "",
+						"initially-visible": false,
+						"enabled": false,
+						"read-only": false,
+						"spell-check": false,
+						"type": "text",
+						"auto-font-size": true,
+						"id": "",
+						"class": ""
+					},
+					"uid": 23,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 25.194538116455078,
+						"y": 120.52901458740234,
+						"width": 111.44567105704684,
+						"height": 16.74259150777914,
 						"originX": 0,
 						"originY": 0,
 						"color": [
